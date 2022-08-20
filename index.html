@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng web</title>
+    <style>
+        * {
+            font-family: "Roboto", sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box {
+            flex : 1;
+            transition: .3s all ease;
+        }
+        .box a{
+            color: aliceblue;
+            text-decoration: none;
+            font: 25px;
+            text-shadow: rgb(118, 49, 174) 3px 3px 1px;
+        }
+        .box:hover {
+            transform: scale(1.1);
+        }
+        h2{
+            position: relative; text-align: center; color: rgb(255, 255, 255); font-size: 50px; 
+            text-shadow: rgb(107, 105, 0) 6px 3px 1px;
+            text-transform: uppercase;
+            padding: 20px;
+        }
+        h2:hover{
+            color: rgb(234, 255, 113);
+        }
+        .container {
+            position: relative;
+            top: 140px;
+            width: 80%; 
+            display: flex;
+            height: fit-content;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            gap: 2rem;
+            margin: auto;
+        }
+    </style>
+
+    <body style="min-height: 100vh;">
+        <image style="width: 100vw;
+        position: absolute;
+        object-fit: cover;
+        height: 100vh;
+        z-index: 0;" src="/./Images/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall.jpg"></image>
+        <h2>Danh mục sách</h2>
+        <div class="container">
+            <div class="box">
+                <h3><a href="web.html">HTML</a></h3>
+                <a href="./index/web.html"> <img src="./Images/html.jpg" width="200px" height="260px" ></a>
+            </div>
+            <div class="box">
+                <h3><a href="css.html">CSS</a></h3>
+                <a href="./index/css.html"><img src="./Images/css.jpg" width="200px" height="260px" ></a>
+            </div>
+            <div class="box">
+                <h3><a href="javascript.html">Javascript</a></h3>
+                <a href="./index/Javascript.html"><img src="./Images/javascript.jpg" width="200px" height="260x" ></a>
+            </div>
+            <div class="box">
+                <h3><a href="jquery.html">jQuery</a></h3>
+                <a href="./index/Jquery.html"><img src="./Images/jQuery.jpg" width="200px" height="260px" ></a>
+            </div>
+        </div>
+    </body>
+</body>
